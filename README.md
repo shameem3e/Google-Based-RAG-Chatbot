@@ -69,7 +69,7 @@ pip install -r requirements.txt
 If you use the Google Custom Search API:
 
 * Create API key & Search Engine ID from [Google Custom Search](https://developers.google.com/custom-search/v1/overview)
-* Replace them in src/google_search.py
+* Replace them in `src/google_search.py`
 
 If you want free scraping mode (less reliable), no API key needed.
 
@@ -97,13 +97,13 @@ Type your question and chat with your RAG system.
 Handles Google search (API or scraping) and returns cleaned text from results.
 
 #### 2. text_utils.py
-* chunk_text() → Splits long text into overlapping chunks.
-* clean_text() → Removes extra spaces, newlines, and unwanted symbols.
+* `chunk_text()` → Splits long text into overlapping chunks.
+* `clean_text()` → Removes extra spaces, newlines, and unwanted symbols.
 
 #### 3. embed_store.py
 * Fetches search results
 * Cleans and chunks text
-* Creates embeddings with all-MiniLM-L6-v2
+* Creates embeddings with `all-MiniLM-L6-v2`
 * Stores in FAISS
 
 #### 4. retrieve_answer.py
@@ -126,11 +126,11 @@ Yes — once embeddings are stored in FAISS, you can run the chat locally.
 
 Q3: Which embedding model is used?
 
-all-MiniLM-L6-v2 from Hugging Face.
+[all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) from Hugging Face.
 
 Q4: Can I change the chunk size?
 
-Yes — edit the chunk_size parameter in text_utils.py.
+Yes — edit the `chunk_size` parameter in `text_utils.py`.
 
 Q5: Will Google block my requests?
 
