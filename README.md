@@ -150,7 +150,7 @@ Possibly, if you make too many requests in scraping mode. Use delays or the offi
 
 ## 👨‍💻 Author
 [MD. Shameem Ahammed](https://sites.google.com/view/shameem3e)
-Graduate Student, AI & ML Enthusiast
+Graduate Student | AI & ML Enthusiast
 
 ---
 
